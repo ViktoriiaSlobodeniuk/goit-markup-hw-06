@@ -87,51 +87,64 @@
               <use href="./images/icons.svg#close"></use>
             </svg>
           </button>
-          <form
-            class="register-form"
-            name="register-form"
-            autocomplete="off"
-            novalidate
-          >
+          <form class="register-form" name="register-form" autocomplete="off">
             <strong class="register-form-title"
               >Залиште свої дані, ми вам передзвонимо</strong
             >
             <div class="register-form-group" role="group">
-              <label>
-                <span>Ім'я</span>
-                <input type="text" name="user-name" />
+              <label class="register-form-field">
+                <span class="register-form-label">Ім'я</span>
+                <input
+                  class="register-form-input"
+                  type="text"
+                  name="user-name"
+                />
                 <svg class="reg-form-icon" width="18" height="18">
-                  <use href=""></use>
+                  <use href="./images/icons.svg#person"></use>
                 </svg> </label
-              ><label>
-                <span>Телефон</span>
-                <input type="text" name="user-phone" />
+              ><label class="register-form-field">
+                <span class="register-form-label">Телефон</span>
+                <input
+                  class="register-form-input"
+                  type="tel"
+                  name="user-phone"
+                />
                 <svg class="reg-form-icon" width="18" height="18">
-                  <use href=""></use>
+                  <use href="./images/icons.svg#phone-black"></use>
                 </svg> </label
-              ><label>
-                <span>Пошта</span>
-                <input type="text" name="user-mail" />
+              ><label class="register-form-field">
+                <span class="register-form-label">Пошта</span>
+                <input
+                  class="register-form-input"
+                  type="email"
+                  name="user-mail"
+                />
                 <svg class="reg-form-icon" width="18" height="18">
-                  <use href=""></use>
+                  <use href="./images/icons.svg#email-black"></use>
                 </svg> </label
-              ><label>
-                <span>Коментар</span>
+              ><label class="register-form-field">
+                <span class="register-form-label">Коментар</span>
                 <textarea
+                  class="register-form-message"
                   name="comment"
                   rows="10"
                   placeholder="Введіть текст"
                 ></textarea>
               </label>
             </div>
-            <label>
-              <input type="checkbox" name="checkbox" />
+            <label class="register-form-agreement">
+              <input
+                class="register-form-checkbox visually-hidden"
+                type="checkbox"
+                name="checkbox"                
+              />
+             
               <span
                 >Погоджуюся з розсилкою та приймаю
-                <a href="">Умови договору</a></span
+                <a class="register-form-link" href="">Умови договору</a></span
               >
             </label>
-            <button type="submit">Відправити</button>
+            <button class="register-form-btn" type="submit">Відправити</button>
           </form>
         </div>
       </div>
@@ -569,7 +582,7 @@
             </address>
           </div>
           <div class="online-address">
-            <h2 class="social-title">Приєднуйтесь</h2>
+            <span class="social-title">Приєднуйтесь</span>
             <ul class="social-list list">
               <li class="social-item">
                 <a
@@ -621,20 +634,19 @@
               </li>
             </ul>
           </div>
-          <form
-            class="subscribe-form"
-            name="subscribe-form"
-            autocomplete="off"
-            novalidate
-          >
-            <label>
-              <span>Підпишіться на розсилку</span>
-              <input type="text" placeholder="E-mail"/>
-            </label>
-            <button class="subscribe-btn" type="submit">Підписатися</button>
-            <svg>
-              <use href=""></use>
-            </svg>
+          <form class="subscribe-form" name="subscribe-form">
+             <span class="subscribe-form-title">Підпишіться на розсилку</span>
+              <div class="subscription">
+                
+              <label class="subscribe-form-field">
+               
+                <input class="subscribe-form-input" type="email" name="email" placeholder="E-mail" />
+              </label>
+              <button class="subscribe-form-btn" type="submit">Підписатися</button>
+              <svg class="subscribe-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </div>
           </form>
         </div>
       </div>
