@@ -403,6 +403,12 @@ ul {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+
+  transition: border-color var(--animation);
+}
+.register-form-message:hover,
+.register-form-message:focus{
+border-color: var(--accent-bg-cl);
 }
 .register-form-message::placeholder {
   color: var(--placeholder-txt-cl);
