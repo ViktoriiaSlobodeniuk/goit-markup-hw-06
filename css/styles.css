@@ -39,6 +39,7 @@
   --box-shadow-pf-hover: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --backdrop-bg-cl: rgba(0, 0, 0, 0.2);
+  --input-ft-border-cl: rgba(255, 255, 255, 0.3);
 
   /* Переходи */
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -413,9 +414,24 @@ ul {
   margin-bottom: 30px;
 
   color: var(--secondary-txt-cl);
-  
 }
 
+.register-form-checkbox {
+  appearance: none;
+}
+
+.register-form-check-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border-radius: 2px;
+  border: 2px solid var(--additional-cl);
+}
+.register-form-checkbox:checked + .register-form-check-icon {
+  background-image: url(../images/icon-check.svg);
+  border: transparent;
+}
 
 .register-form-link {
   color: var(--accent-txt-cl);
@@ -433,7 +449,7 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  color: #ffffff;
+  color: var(--light-txt-cl);
   background-color: var(--accent-bg-cl);
   border: none;
   border-radius: 4px;
@@ -718,19 +734,19 @@ ul {
   background-color: transparent;
   width: 358px;
   height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid var(--input-ft-border-cl);
   border-radius: 4px;
   outline: transparent;
 
+  margin-right: 12px;
   padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--light-txt-cl-60);
 }
 .subscribe-form-input::placeholder {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--light-txt-cl-60);
 }
 .subscribe-form-btn {
   width: 200px;
